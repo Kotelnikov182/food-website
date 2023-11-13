@@ -1,5 +1,42 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: sans-serif;
     box-sizing: border-box;
+}
+header.header{
+    display: flex;
+    padding-top: 30px;
+    
+    align-items: center;
+    justify-content:space-around;
+}
+header ul {
+    display: flex;
+}
+header li{
+    list-style-type: none;
+    margin-right: 41px;
+}
+header li:last-child{
+    margin-right: 0;
+}
+header nav a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 500;
+    color: #150C01;
+    opacity: 0.6;
+}
+header nav a:hover{
+    color: #DC780B;
+}
+header .header__btn{
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif; 
+    color: #fff;
+    font-weight:400;
+    padding: 13px 30px 14px 30px;
+    background-color: #DC780B;
 }
