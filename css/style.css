@@ -53,7 +53,6 @@ header .header__btn:hover{
     left:245px;
     z-index:-1;
 }
-.banner__title{
-    
+.banner__title{ 
     font-family: 'Philosopher', sans-serif;
 }
