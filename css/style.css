@@ -4,12 +4,15 @@
     font-family: sans-serif;
     box-sizing: border-box;
 }
+body{
+    max-width: 941px;
+    margin: 0 auto;
+}
 header.header{
     display: flex;
     padding-top: 30px;
-    
     align-items: center;
-    justify-content:space-around;
+    justify-content:space-between;
 }
 header ul {
     display: flex;
@@ -39,4 +42,18 @@ header .header__btn{
     font-weight:400;
     padding: 13px 30px 14px 30px;
     background-color: #DC780B;
+}
+header .header__btn:hover{
+    background-color:#a85c08;
+}
+/* BANNER */
+.main-img{
+    position: relative;
+    top:-130px;
+    left:245px;
+    z-index:-1;
+}
+.banner__title{
+    
+    font-family: 'Philosopher', sans-serif;
 }
