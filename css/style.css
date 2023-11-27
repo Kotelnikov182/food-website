@@ -11,6 +11,7 @@ body{
 header.header{
     display: flex;
     padding-top: 30px;
+    margin-bottom: 160px;
     align-items: center;
     justify-content:space-between;
 }
@@ -27,12 +28,13 @@ header li:last-child{
 header nav a{
     text-decoration: none;
     font-family: 'Roboto', sans-serif; 
-    font-weight: 500;
+    font-weight: 400;
     color: #150C01;
     opacity: 0.6;
 }
 header nav a:hover{
     color: #DC780B;
+    transition: 250ms;
 }
 header .header__btn{
     text-decoration: none;
@@ -44,15 +46,66 @@ header .header__btn{
     background-color: #DC780B;
 }
 header .header__btn:hover{
-    background-color:#a85c08;
+    background-color:#e08828;
+    box-shadow: 0 .5em 1em 0 rgba(0, 0, 0, 0.15), 0 .4em .5em -.4em rgba(0, 0, 0, 0.4);
+    transition: 350ms;
 }
 /* BANNER */
-.main-img{
-    position: relative;
-    top:-130px;
-    left:245px;
-    z-index:-1;
+.banner{
+width: 100%;
 }
-.banner__title{ 
+.banner__title{
+    max-width: 555px;
+    margin-bottom: 45px;
     font-family: 'Philosopher', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+.banner__subtitle{
+    font-family: Roboto; 
+    margin-bottom: 50px;
+    max-width: 555px;
+    opacity: 0.7; 
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #150C01;
+}
+.banner__btn {
+    font-family: Roboto;
+    font-size: 16px;
+}
+.banner__btn .btn-orange{
+    font-family: Roboto;
+    font-size: 16px;
+    margin-right: 30px;
+    padding: 21px 41px 20px 40px;
+    background-color: #DC780B;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+} 
+.btn-orange:hover{
+    background-color:#e08828;
+    box-shadow: 0 .5em 1em 0 rgba(0, 0, 0, 0.15), 0 .4em .5em -.4em rgba(0, 0, 0, 0.4);
+    transition: 350ms;
+    cursor: pointer;
+}
+
+.banner__btn .btn-border{
+    font-family: Roboto;
+    background-color: #fff;
+    font-size: 16px;
+    padding: 21px 40px 20px 40px;
+    color: #dc780b;
+    border:1px solid #DC780B;
+    border-radius: 5px;
+}
+.btn-border:hover{
+    background-color:#e08828;
+    box-shadow: 0 .5em 1em 0 rgba(0, 0, 0, 0.15), 0 .4em .5em -.4em rgba(0, 0, 0, 0.4);
+    transition: 350ms;
+    border: none;
+    color: #fff;
+    cursor: pointer;
 }
