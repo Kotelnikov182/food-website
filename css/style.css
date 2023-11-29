@@ -53,6 +53,7 @@ header .header__btn:hover{
 /* BANNER */
 .banner{
 width: 100%;
+margin-bottom: 120px;
 }
 .banner__title{
     max-width: 555px;
@@ -108,4 +109,52 @@ width: 100%;
     border: none;
     color: #fff;
     cursor: pointer;
+}
+/* FEATURES */
+.features{
+width: 100%;
+}
+.features__title{
+font-size: 16px;
+font-family: Roboto; 
+letter-spacing: 3.2px; 
+text-transform: uppercase;
+text-align: center;
+color: #DC780B; 
+font-weight: 500; 
+margin-bottom: 8px;
+}
+.features__subtitle{
+    text-align: center;
+    color: #150C01; 
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-family: Philosopher; 
+    margin-bottom: 165px; /* Поменять высоту послу вставки иконок  */
+}
+.features__box{
+display: flex;
+justify-content: space-between;
+}
+.features__card{
+min-width: 300px;
+}
+.card-title{
+    color: #150C01;
+    text-align: center;
+    font-family: Philosopher;
+    font-size: 25px; 
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+.card-subtitle{
+    color: #150C01;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
 }
