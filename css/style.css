@@ -255,8 +255,9 @@ line-height: 24px;
     cursor: pointer;
 }
 /* MENU */
-.menu{}
-.menu__title{
+.food-menu{}
+.food-menu__title{
+text-align: center;
 margin-bottom: 20px;
 font-size: 16px;
 font-family: Roboto; 
@@ -265,7 +266,8 @@ text-transform: uppercase;
 color: #DC780B; 
 font-weight: 500; 
 }
-.menu__subtitle{
+.food-menu__subtitle{
+text-align: center;
 margin-bottom: 30px;
 color: #150C01;
 font-family: Philosopher;
@@ -274,18 +276,29 @@ font-style: normal;
 font-weight: 700;
 line-height: 40.625px; 
 }
-.menu__text{
+.food-menu__text{
+    padding-bottom: 45px;
+    max-width: 750px;
+    text-align: center;
+    margin: 0 auto;
     color: #150C01;
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px; 
+    opacity: 0.7;
 }
-.menu__wrapper{}
-.menu__card{}
-.menu__card-img{}
-.menu__card-title{
+.food-menu__wrapper{}
+.food-menu__card{
+    width: 360px;
+    height: 450px;
+}
+.food-menu__card-img{
+    margin-bottom: 20px;
+}
+.food-menu__card-title{
+display: inline-block;
 color: #150C01;
 font-family: Philosopher;
 font-size: 25px;
@@ -293,7 +306,9 @@ font-style: normal;
 font-weight: 700;
 line-height: 24px;
 }
-.menu__card-price{
+.food-menu__card-price{
+display: inline-block;
+margin-left: 120px;
 color: #150C01;
 text-align: right;
 font-family: Philosopher;
@@ -302,5 +317,75 @@ font-style: normal;
 font-weight: 700;
 line-height: 24px;
 }
-.menu__card-text{}
-.menu__card-plus{}
+.food-menu__card-text{
+margin-top: 20px;  /* упростил отступ от двух не обьединенных блоков name and price*/
+margin-bottom: 20px;
+max-width: 310px;
+color: #150C01;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+opacity: 0.7; 
+}
+.food-menu__card-plus{
+    width: 36px;
+    height: 34px;
+    background-color: #DC780B;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+.food-menu__card-plus:hover{
+    background-color:#e08828;
+    box-shadow: 0 .5em 1em 0 rgba(0, 0, 0, 0.15), 0 .4em .5em -.4em rgba(0, 0, 0, 0.4);
+    transition: 350ms;
+    border: 1px solid #e08828;
+    color: #fff;
+    cursor: pointer;}
+.food-menu__card-stars{
+    display: inline-block;
+    vertical-align: middle;
+    /* https://habr.com/ru/articles/588695/ */
+}
+    .rating-area {
+        overflow: hidden;
+        width: 265px;
+        margin: 0 auto;
+       }
+       .rating-area:not(:checked) > input {
+        display: none;
+       }
+       .rating-area:not(:checked) > label {
+        float: right;
+        width: 42px;
+        padding: 0;
+        cursor: pointer;
+        font-size: 32px;
+        line-height: 32px;
+        color: lightgrey;
+        text-shadow: 1px 1px #bbb;
+       }
+       .rating-area:not(:checked) > label:before {
+        content: '★';
+       }
+       .rating-area > input:checked ~ label {
+        color: gold;
+        text-shadow: 1px 1px #c60;
+       }
+       .rating-area:not(:checked) > label:hover,
+       .rating-area:not(:checked) > label:hover ~ label {
+        color: gold;
+       }
+       .rating-area > input:checked + label:hover,
+       .rating-area > input:checked + label:hover ~ label,
+       .rating-area > input:checked ~ label:hover,
+       .rating-area > input:checked ~ label:hover ~ label,
+       .rating-area > label:hover ~ input:checked ~ label {
+        color: gold;
+        text-shadow: 1px 1px goldenrod;
+       }
+       .rate-area > label:active {
+        position: relative;
+       }
